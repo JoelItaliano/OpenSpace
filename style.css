@@ -1,0 +1,107 @@
+*{padding: 0; margin: 0}
+body{
+    background-color: rgb(000,000,000);
+    display: flex;
+    justify-content:center;
+}
+
+.space{
+    background: url("./img/space.png") no-repeat;
+    min-width: 1000px;
+    min-height: 1000px;
+    background-size: contain;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+  }
+.planet-area{
+    display: flex;
+    height: 70%;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.planet{
+    background: url("./img/mars.png") no-repeat;
+    height: 95%;
+    background-size: contain;
+
+}
+
+.rocket{
+    position: relative;
+    width: 30%;
+    right: 30%;
+    bottom: 40%;
+    transform: rotate(30deg);
+}
+
+.control-panel{
+    width: 500px;
+    position:relative;
+    right: 370px;
+    bottom: 300px;
+    box-sizing: content-box;
+    padding: 15px;
+    background-color: #280000;
+    background-image: linear-gradient(45deg, #fda900 25%, transparent 25%, transparent 75%, #fda900 75%, #fda900),
+    linear-gradient(45deg, #fda900 25%, transparent 25%, transparent 75%, #fda900 75%, #fda900);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+}
+
+.control-panel__inner {
+    position: relative;
+    text-align: center;
+    background: #282828 radial-gradient(black 15%, transparent 16%); radial-gradient(black 15%, transparent 16%) radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 0 8px 8px 0 1px 8px 9px;
+    background-size:16px 16px;
+}
+
+.control-panel input{
+    border-color: #fda900;
+    border-radius: 10px;
+    color: #ee0000;
+    margin: 10px;
+    font-size: 15px;
+}
+#password{
+    padding: 10px 25px;
+}
+#button__ok{
+    padding: 10px 25px;
+    background-color: #fff000;
+}
+
+.check-buttons{
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input[type=checkbox] { /*agrandar las casillas de verificacion*/
+    transform: scale(2);
+}
+.levers{
+    height:120px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+}
+.levers input{
+    width: 80px;
+    transform: rotate(270deg);
+}
+
+#button__launch{
+    padding: 10px 25px;
+    border-style: dashed;
+    border-radius: 30px;
+    border-color: #fff;
+    background-color: #ee0000;
+    width: 30%;
+    height: 40px;
+    color: #ffff;
+    margin-bottom: 10px;
+}

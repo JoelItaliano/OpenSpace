@@ -1,0 +1,113 @@
+*{padding: 0; margin: 0}
+body{
+    background-color: rgb(000,000,000);
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    z-index: 0;
+}
+
+.space{
+    background: url("./img/space.png") no-repeat;
+    min-width: 70%;
+    height: 100vh;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
+  }
+.planet-area{
+    display: flex;
+    height: 70%;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.planet{
+    z-index: 1;
+    background: url("./img/mars.png") no-repeat;
+    height: 70%;
+    background-size: contain;
+
+}
+
+#rocket{
+    position: absolute;
+    width: 50%;
+    right: 80px;
+    bottom: 200px;
+    transform: rotate(10deg);
+    z-index: 2;
+}
+
+.control-panel{
+    width: 500px;
+    position:relative;
+    left: 200px;
+    bottom: 200px;
+    box-sizing: content-box;
+    padding: 15px;
+    background-color: #280000;
+    background-image: linear-gradient(45deg, #fda900 25%, transparent 25%, transparent 75%, #fda900 75%, #fda900),
+    linear-gradient(45deg, #fda900 25%, transparent 25%, transparent 75%, #fda900 75%, #fda900);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+}
+
+.control-panel__inner {
+    position: relative;
+    text-align: center;
+    background: #282828 radial-gradient(black 15%, transparent 16%); radial-gradient(black 15%, transparent 16%) radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 0 8px 8px 0 1px 8px 9px;
+    background-size:16px 16px;
+}
+
+.control-panel input{
+    border-color: #fda900;
+    border-radius: 10px;
+    color: #ee0000;
+    margin: 10px;
+    font-size: 15px;
+}
+#password{
+    padding: 10px 25px;
+}
+#button__ok{
+    padding: 10px 25px;
+    background-color: #fff000;
+}
+
+.check-buttons{
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input[type=checkbox] { /*agrandar las casillas de verificacion*/
+    transform: scale(2);
+}
+.levers{
+    height:120px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+}
+.levers input{
+    width: 80px;
+    transform: rotate(270deg);
+}
+
+#button__launch{
+    padding: 10px 25px;
+    border-style: dashed;
+    border-radius: 30px;
+    border-color: #fff;
+    background-color: #ee0000;
+    width: 30%;
+    height: 40px;
+    color: #ffff;
+    margin-bottom: 10px;
+}

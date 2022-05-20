@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img src="./img/mars.png" alt="planet" class="planet">
+            <img src="./img/rocket.png" alt="rocket" class="rocket" id="rocket">
+        </div>
+
+        <div class="control-panel">
+            <div class="control-panel__inner" onclick="clickCheckbox()">
+                <input type="password" placeholder="Enter password to unlock" id="password">
+                <input id="button__ok" type="button" value="ok">
+                <div class="check-buttons" >
+                <input type="checkbox" name="name_checkbox" class="check-box" disabled >
+                <input type="checkbox" name="name_checkbox" class="check-box" disabled >
+                <input type="checkbox" name="name_checkbox" class="check-box" disabled >
+                <input type="checkbox" name="name_checkbox" class="check-box" disabled >
+                <input type="checkbox" name="name_checkbox" class="check-box" disabled >
+                <input type="checkbox" name="name_checkbox" class="check-box" disabled >
+              </div>
+              <div class="levers">
+                <input type="range" min="1" max="100" class="range" disabled>
+                <input type="range" min="1" max="100" class="range" disabled>
+                <input type="range" min="1" max="100" class="range" disabled>
+                <input type="range" min="1" max="100" class="range" disabled>
+                <input type="range" min="1" max="100" class="range" disabled>
+              </div>
+                <input id="button__launch" type="button" value="Launch" disabled/>
+          </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

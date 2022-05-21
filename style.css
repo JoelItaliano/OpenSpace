@@ -21,7 +21,7 @@ body{
     display: flex;
     height: 70%;
     align-items: flex-end;
-    overflow: hidden;
+
     position: relative;
     z-index: 1;
 }
